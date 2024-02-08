@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Shivam_portfolio</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="portfolio.css">
+
+
+
+<style type="text/css">
+  .navigation-bar{  
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background: transparent;
+  backdrop-filter: blur(20px);
+  z-index: 5;
+}
+.section{
+  padding-top:100px ;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  }
+.all-section{
+  right: 0px;
+  top: 45px;
+  left: 0px;
+  width: 100%;
+}
+h1{
+  text-align: center;
+}
+html{
+  scroll-behavior: smooth;
+}
+.logo{
+  color: royalblue;
+  letter-spacing: 3px;
+  font-size:30px;
+  font-family: arial black;
+
+}
+.mymenus{
+  font-weight: bolder;
+        color: black;
+}
+.mymenus:hover{
+        color: blue;
+        text-decoration:underline 2px solid;
+}
+.home-section{
+     background-image: url("https://www.shutterstock.com/image-vector/software-developer-sitting-desk-working-260nw-2249980829.jpg");
+     background-repeat: no-repeat;
+     background-size: 50%;
+     background-position: 90% 40%;
+
+}
+.myinfo{
+  
+  height: 450px;
+  width: 40%;
+  
+  margin-left: 70px;  
+}
+.resume{
+  height: 50px;
+  width: 120px;
+  margin: 20px 30px;
+  border: none;
+  background-color: royalblue;
+  border-radius: 10px;
+  font-family: arial black;
+  color: white;
+}
+
+.resume:hover{
+  height: 40px;
+  width: 100px;
+  color: royalblue;
+  background-color: white;
+  border: 2px solid black;
+  box-shadow: 0px 0px 20px grey;
+}
+.info-home{
+  font-size: 30px;
+  font-family: elephant;
+
+}
+.myname{
+  font-size: 50px;
+  color: blue;
+}
+.fsjd{
+  font-size: 40px;
+  color: orangered;
+}
+.about-section{
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-section{ 
+         height:100%;
+         width: 50%;
+
+}
+.myphoto{
+  border-radius: 100px;
+  height:600px;
+  width:700px;
+}
+.objective{
+  
+     width: 50%;
+     height: 100%;
+}
+.career{
+  text-align: justify;
+  line-height: 50px;
+  font-size: 22px;
+  font-weight: bolder;
+  font-family: sans-serif;
+}
+
+}
+.skills-section{
+  width: 100%;
+}
+.skills-table{
+  margin-top: 70px;
+}
+.table-heading{
+  font-size: 25px;
+  font-family: arial black;
+  margin-bottom: 20px;
+  color: orangered;
+  
+  text-decoration: underline 2px solid;
+}
+.table-paragraph{
+  font-size: 18px;
+}
+
+.project-section{
+
+  height: 1200px;
+
+}
+.card-group{
+  height: 400px;
+  width: 90%;
+  padding: 50px;
+  margin-left: 90px;
+  border: 5px;
+}
+.card{
+  margin: 50px;
+}
+.card:hover{
+  box-shadow: 0px 0px 20px grey;
+  border-radius:5px;
+}
+.card-body:hover{
+  box-shadow: 0px 0px 20px grey;
+  border-radius: 20px;
+  width: 25px;
+}
+.nav-item{
+  position: center;
+}
+
+</style>
+</head>
+<body>
+   	<div class="navigation-bar">
+   	<nav class="navbar navbar-expand-lg navbar-light ">
+  <a class="navbar-brand" href="#"><span class="logo">Shivam</span> </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#home"><span class="mymenus">Home</span><span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about"><span class="mymenus">About</span> </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#skills"><span class="mymenus">Skills</span> </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#project"><span class="mymenus">Project</span> </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact"><span class="mymenus">Contact</span> </a>
+      </li> 
+       </ul>
+    </div>
+ </nav>
+   </div>
+   <!-- navigation-div closed here -->
+<div class="all-section">	
+   <div class="section home-section" id="home">
+   	<div class="myinfo">
+   		<span class="info-home">Hello</span><br>
+   		<span class="info-home">My name is</span>
+   		<div class="logo myname">Shivam Dange</div>
+   		<div class="info-home">I am a <span class="fsjd">Full Stack Java Developer</span></div>
+   	 <div>
+   	 	<button class="resume">resume</button>
+   	 </div>  		  		
+   	</div>
+   </div>
+  
+
+
+   <div class="section about-section" id="about">
+   	<div class="image-section">
+   	
+   	</div>
+   	<div class="objective">
+   		<h1 class="logo aboutlogo">ABOUT</h1>
+       <p class="career">Looking for a challenging role in a reputable organization to utilize my technical, database, and management skills for the growth of the organization as well as to enhance my knowledge about new and emerging trends in the IT sector.<p>
+       
+   	</div>
+   </div>
+  
+
+
+
+
+
+   <div class="section skills-section" id="skills" align="center">
+   	  <h1 class="logo">SKILLS SECTION</h1>
+      <div>
+      	<table  class="skills-table" width="90%" height="400px">
+      		<tr>
+      			<td align="center" valign="top" width="50%" height="200px"><h1 class="table-heading">Language</h1>
+      				<p class="table-paragraph">Core Java,JavaScript,HTML,CSS,SQL,XML,JSON,C#,C,C++</p>
+      			</td>
+      			<td align="center" valign="top"><h1 class="table-heading">API'S & Frameworks</h1>
+      				<p class="table-paragraph">Collection, Stream,JDBC,servlents,JSP,Hibernets,Restful API,Bootstrap,React JS,Spring,SB,Spring JPA</p>
+      			</td>
+      		</tr>
+      		<tr>
+      			<td align="center" valign="top"><h1 class="table-heading">Tools & Servers</h1>
+      				<p class="table-paragraph">Eclipse,VS code,JIRA,Postman,Subline,Github,Maven,MySQL,Oracle</p>
+      			</td>
+      			<td align="center" valign="top"><h1 class="table-heading">Operating System</h1>
+      				<p class="table-paragraph">Windows,Linux,ios,Android,Ubuntu</p>
+      			</td>
+      		</tr>
+      	</table>
+      </div>
+   </div>
+  
+
+
+   <div class="section project-section" id="project" >
+   	<h1 class="logo">PROJECT SECTION</h1>
+
+        <div class="card-group">
+  <div class="card">
+    <img src="https://www.freeiconspng.com/uploads/whatsapp-icon-0.png" class="card-img-top" alt=" ">
+    <div class="card-body">
+      <h5 class="card-title">Whatsapp</h5>
+      <p class="card-text"></p>
+      <p class="card-text"><small class="text-muted"></small></p>
+      <p class="card-text">Social media has become an essential part of day-to-day life in this technology-friendly era. Updating a WhatsApp Status gives your contacts a small glimpse into your life. However, creating a WhatsApp status can be difficult, so we have put together some of the best WhatsApp Statuses.</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://play-lh.googleusercontent.com/6rgz9Mdc40O2kNHaABJDYSdkFr-TSSH2G7b0VnggeiIUrm-kRW0SrbPuyGYwsNyNqro" class="card-img-top" alt="..." height="420px" width="100px">
+    <div class="card-body">
+      <h5 class="card-title">Calculator</h5>
+      <p class="card-text"></p>
+      <p class="card-text"><small class="text-muted"></small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://cdn-icons-png.flaticon.com/512/10691/10691802.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Calender</h5>
+      <p class="card-text">.</p>
+      <p class="card-text"><small class="text-muted"></small></p>
+    </div>
+  </div>
+</div>
+
+  
+
+   <div class="card-group">
+  <div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqxolz7V2YyllRneJTGFS5lCXFitS0I8hzVBO82TTFug&s" class="card-img-top" alt=" ">
+    <div class="card-body">
+      <h5 class="card-title">Music</h5>
+      <p class="card-text"></p>
+      <p class="card-text"><small class="text-muted"></small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://i.pinimg.com/originals/77/0b/80/770b805d5c99c7931366c2e84e88f251.png" class="card-img-top" alt="..." height="420px" width="100px">
+    <div class="card-body">
+      <h5 class="card-title">whether</h5>
+      <p class="card-text"></p>
+      <p class="card-text"><small class="text-muted"></small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOl9fNUDTB_yqon85QIO-Qv8enXO0dFIJgbLJB2mniOw&s" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">clock</h5>
+      <p class="card-text">.</p>
+      <p class="card-text"><small class="text-muted"></small></p>
+    </div>
+  </div>
+</div>
+
+   </div>
+  
+
+
+
+   <div class="nav-item" id="contact">
+   	<h1 class="logo">CONTACT SECTION</h1>
+   </div>
+</div>
+<table class="nav-item" border="1px" align="center" cellpadding="10px">
+          <tr>
+            <td align="center" valign="top" width="50%" height="200px"><h1 > About Us</h1>
+              <p align="left">Phone Number : 9022291019</p>
+              <p align="left">Email Id :shivamdange29@gmail.com</p>
+            </td>
+            <td align="center" valign="top">
+
+          <form>
+      
+        <legend align = "center">ENQUIRY</legend>
+
+        <label>Phone Number:</label>
+
+        <input type="text" name="Phone Number" required maxlength="10" pattern="[6-9]{1}[0-9]{9}" >
+
+        <br><br>
+
+        <label >Email Id:</label>
+
+        <input type="text" name="Email" required maxlength="20" >
+
+        <br><br>
+
+         <label >Description:</label>
+
+        <input type="text" name="Description" >
+
+          <br><br>
+
+        <input type="submit" name="submit">
+
+     
+    </form>
+
+
+</body>
+</html>
